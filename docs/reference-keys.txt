@@ -1,10 +1,8 @@
 fig:nice-fig
 tab:nice-tab
+fig:cars
+eq:comp
 intro
 literature
-methods
-math-example
-applications
-example-one
-example-two
-final-words
+met
+math

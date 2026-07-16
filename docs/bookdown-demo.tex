@@ -127,7 +127,7 @@
 
 \title{A Minimal Book Example}
 \author{Yihui Xie}
-\date{2026-07-15}
+\date{2026-07-16}
 
 \begin{document}
 \maketitle
@@ -159,7 +159,9 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{met}.
+
+There is a math example in Section \ref{math}.
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
@@ -232,15 +234,53 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 
 Here is a review of existing methods.
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+see Figure \ref{fig:nice-fig} and Table \ref{tab:nice-tab}.
+
+See equation \eqref{eq:comp}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(cars)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/cars-1} 
+
+}
+
+\caption{Cars!}\label{fig:cars}
+\end{figure}
+
+See the following result
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{1}\SpecialCharTok{+}\DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2
+\end{verbatim}
+
+\hypertarget{met}{%
+\chapter{Methods}\label{met}}
 
 We describe our methods in this chapter.
 
 Math can be added in body using usual syntax like this
 
-\hypertarget{math-example}{%
-\section{math example}\label{math-example}}
+\hypertarget{math}{%
+\section{math example}\label{math}}
+
+\begin{equation} 
+P(A^c) = 1 - P(A).
+\label{eq:comp}
+\end{equation}
+
+See equation \eqref{eq:comp}.
 
 \(p\) is unknown but expected to be around 1/3. Standard error will be approximated
 
@@ -255,22 +295,6 @@ We will approximate standard error to 0.027\footnote{\(p\) is unknown but expect
   \[
   SE = \sqrt{\frac{p(1-p)}{n}} \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
   \]}
-
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
-
-Some \emph{significant} applications are demonstrated in this chapter.
-
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
-
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
-
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
-
-We have finished a nice book.
 
   \bibliography{book.bib,packages.bib}
 

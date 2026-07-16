@@ -1,3 +1,18 @@
 # Literature
 
 Here is a review of existing methods.
+
+see Figure \@ref(fig:nice-fig) and Table \@ref(tab:nice-tab).
+
+See equation \@ref(eq:comp).
+
+```{r cars, fig.cap='Cars!', out.width='80%', fig.asp=.75, fig.align='center'}
+plot(cars)
+```
+
+See the following result
+
+```{r}
+1+1
+```
+
