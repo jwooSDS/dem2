@@ -6,3 +6,4 @@ intro
 literature
 met
 math
+blank-canvas
