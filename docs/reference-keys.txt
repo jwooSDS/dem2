@@ -2,6 +2,7 @@ fig:nice-fig
 tab:nice-tab
 fig:cars
 eq:comp
+fig:cards
 intro
 literature
 met

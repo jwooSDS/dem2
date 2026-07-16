@@ -3,3 +3,7 @@
 Add my own new section.
 
 Read [@BH2019] Ch 2. 
+
+```{r cards, fig.cap = "Sample Space of Drawing One Card from Standard Deck. Picture from [wikipedia](https://en.wikipedia.org/wiki/Standard_52-card_deck)", echo = FALSE}
+knitr::include_graphics("images/02-cards.jpg")
+```
